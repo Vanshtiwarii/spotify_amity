@@ -37,16 +37,16 @@ def get_sentiment(text):
 # Playlist function based on sentiment
 def get_playlist_for_sentiment(sentiment):
     playlists = {
-        'happy': ['https://open.spotify.com/playlist/37i9dQZF1DX0ZkzZf9S1ox',  # Happy Hits
-                  'https://open.spotify.com/playlist/37i9dQZF1DWVr5y7G38AZF'],  # Pop Hits
-        'sad': ['https://open.spotify.com/playlist/37i9dQZF1DWWbWoV3u6g9A',  # Sad Songs
-                'https://open.spotify.com/playlist/37i9dQZF1DX5jvS1L2ns51'],  # Lonely Songs
-        'excited': ['https://open.spotify.com/playlist/37i9dQZF1DWY9O1HOrMSSj',  # Workout Playlist
-                    'https://open.spotify.com/playlist/37i9dQZF1DX38QJtQb1Jcb'],  # Party Playlist
-        'angry': ['https://open.spotify.com/playlist/37i9dQZF1DWX5jQwR6l1ad',  # Angry Metal
-                  'https://open.spotify.com/playlist/37i9dQZF1DWVr5y7G38AZF'],  # Metal Hits
-        'relaxed': ['https://open.spotify.com/playlist/37i9dQZF1DX3WvXyH7p6eL',  # Chill Vibes
-                    'https://open.spotify.com/playlist/37i9dQZF1DX9aXBsz2g0X8'],  # Deep Focus
+        'happy': ['https://open.spotify.com/playlist/3bQy66sMaRDIUIsS7UQnuO',  # Happy Hits
+                  'https://open.spotify.com/playlist/6CoCkAYfwWnOynMwhHZHNU'],  # Pop Hits
+        'sad': ['https://open.spotify.com/playlist/37i9dQZF1DXdFesNN9TzXT',  # Sad Songs
+                'https://open.spotify.com/playlist/4YOfhHpjPB0tq29NPpDY3F'],  # Lonely Songs
+        'excited': ['https://open.spotify.com/playlist/3fe6tXjp8x87sMLffEie2Q',  # Workout Playlist
+                    'https://open.spotify.com/album/3009df4r6StN8TZDN1VYci'],  # Party Playlist
+        'angry': ['https://open.spotify.com/playlist/5cwtgqs4L1fX8IKoQebfjJ',  # Angry Metal
+                  'https://open.spotify.com/playlist/37i9dQZF1DX2SThom9u2re'],  # Metal Hits
+        'relaxed': ['https://open.spotify.com/playlist/37i9dQZF1DX2SThom9u2re',  # Chill Vibes
+                    'https://open.spotify.com/playlist/37i9dQZF1DWX3SoTqhs2rq'],  # Deep Focus
     }
     
     return random.choice(playlists.get(sentiment, playlists['relaxed']))  # Default to 'relaxed' playlist
