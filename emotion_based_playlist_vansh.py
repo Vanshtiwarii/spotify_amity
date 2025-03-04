@@ -263,8 +263,8 @@ print(os.getenv("key"))
 
 
 # Spotify API setup
-CLIENT_ID = os.getenv['your_client_id']
-CLIENT_SECRET = os.getenv['your_client_secret']
+CLIENT_ID = os.getenv[your_client_id]
+CLIENT_SECRET = os.getenv[your_client_secret]
 REDIRECT_URI = 'http://localhost:8888/callback'
 
 # Authenticate Spotify API client
