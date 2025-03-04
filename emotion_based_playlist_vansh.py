@@ -254,10 +254,11 @@ from spotipy.oauth2 import SpotifyOAuth
 from textblob import TextBlob
 import streamlit as st
 import random
+import os
 
 # Spotify API setup
-CLIENT_ID = env.your_client_id
-CLIENT_SECRET = env.your_client_secret
+CLIENT_ID = os.environ[your_client_id]
+CLIENT_SECRET = os.environ[your_client_secret]
 REDIRECT_URI = 'http://localhost:8888/callback'
 
 # Authenticate Spotify API client
