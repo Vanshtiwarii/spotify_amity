@@ -265,7 +265,7 @@ print(os.getenv("key"))
 # Spotify API setup
 CLIENT_ID = st.secrets["your_client_id"]
 CLIENT_SECRET = st.secrets["your_client_secret"]
-REDIRECT_URI = 'https://open.spotify.com/playlist/'
+REDIRECT_URI = '"https://accounts.spotify.com/api/token"'
 
 # Authenticate Spotify API client
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
