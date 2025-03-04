@@ -256,9 +256,15 @@ import streamlit as st
 import random
 import os
 
+from dotenv import load_dotenv
+import os
+load_dotenv()
+print(os.getenv("key"))
+
+
 # Spotify API setup
-CLIENT_ID = os.environ[your_client_id]
-CLIENT_SECRET = os.environ[your_client_secret]
+CLIENT_ID = os.getenv['your_client_id']
+CLIENT_SECRET = os.getenv['your_client_secret']
 REDIRECT_URI = 'http://localhost:8888/callback'
 
 # Authenticate Spotify API client
