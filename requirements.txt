@@ -1,3 +1,4 @@
 spotipy
 textblob
 streamlit
+dotenv
